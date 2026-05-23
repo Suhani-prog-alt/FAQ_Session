@@ -24,3 +24,49 @@ This is a FAQ (Frequently Asked Questions) web application with a multi-page str
 - User authentication system
 - Add custom FAQs
 - Community-driven Q&A with replies
+
+## Layout
+
+```
+┌─────────────────────────────────────────────────────┐
+│                     Header/Navigation               │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│  ┌──────────────────────────────────────────────┐  │
+│  │                                              │  │
+│  │         Main Content Area                   │  │
+│  │                                              │  │
+│  │  Page 1: Public FAQ                          │  │
+│  │  - Question 1                                │  │
+│  │  - Question 2                                │  │
+│  │  - Question 3                                │  │
+│  │                                              │  │
+│  │  OR                                          │  │
+│  │                                              │  │
+│  │  Page 2: Add FAQ (Authenticated)             │  │
+│  │  [Add FAQ Form]                              │  │
+│  │                                              │  │
+│  │  OR                                          │  │
+│  │                                              │  │
+│  │  Page 3: FAQ Replies (Authenticated)         │  │
+│  │  - FAQ Item with Replies Section             │  │
+│  │  - Reply 1                                   │  │
+│  │  - Reply 2                                   │  │
+│  │                                              │  │
+│  └──────────────────────────────────────────────┘  │
+│                                                     │
+├─────────────────────────────────────────────────────┤
+│                     Footer                          │
+└─────────────────────────────────────────────────────┘
+```
+
+### Navigation Structure
+
+```
+Home
+├── Public FAQ (Page 1)
+└── [Authentication Check]
+    ├── Add FAQ (Page 2)
+    └── FAQ Replies (Page 3)
+```
+
