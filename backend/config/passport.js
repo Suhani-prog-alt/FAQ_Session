@@ -24,7 +24,7 @@ passport.use('local', new LocalStrategy({
     if (!user.password) {
       return done(null, false, { message: 'This account uses Google login. Please use Google Sign-In instead.' });
     }
-    
+
     // Check if password is correct
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
